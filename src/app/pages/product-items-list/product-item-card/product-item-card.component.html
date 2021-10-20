@@ -1,5 +1,5 @@
 <div class="card"  *ngIf="!userService._is_a_menager">
-    <img class="card-img-top" src="https://res.cloudinary.com/drzzptile/image/upload/v1634739778/online_shop/products/{{p.image}}" alt="{{p.name}}">
+    <img class="card-img-top" src="{{this.settingsService.ImageUrl}}v1634739778/online_shop/products/{{p.image}}" alt="{{p.name}}">
     <div class="card-body">
         <p>{{p.name}}</p>
         <p>{{p.description}}</p>
@@ -20,7 +20,7 @@
 
 <div class="card"  *ngIf="userService._is_a_menager">
     <i class="fas fa-pen edit-product" #editproductModal id="editproductModal" data-toggle="modal" data-target="#edit-product" (click)="productsService.editProduct(p.id)" ></i>
-    <img class="card-img-top product-img" src="https://res.cloudinary.com/drzzptile/image/upload/v1634739778/online_shop/products/{{p.image}}" alt="{{p.name}}">
+    <img class="card-img-top product-img" src="{{this.settingsService.ImageUrl}}v1634739778/online_shop/products/{{p.image}}" alt="{{p.name}}">
     <div class="card-body">
         <p>{{p.name}}</p>
         <p>{{p.description}}</p>

@@ -6,7 +6,7 @@
             <i class="fas fa-minus-circle minus-cart-item" (click)="this.cartService.updateQnt(d.id,(-1))"></i>
         </div>
         <div class="cart-item-img-container">
-            <img class="cart-item-img" src="https://res.cloudinary.com/drzzptile/image/upload/v1634739778/online_shop/products/{{d.product.image}}" alt="{{d.product.name}}">
+            <img class="cart-item-img" src="{{this.settingsService.ImageUrl}}v1634739778/online_shop/products/{{d.product.image}}" alt="{{d.product.name}}">
         </div>
         <div class="cart-item-body">
             <h6>{{d.product.name}}</h6>

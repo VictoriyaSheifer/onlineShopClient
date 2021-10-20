@@ -2,6 +2,7 @@ import { Component, Input, OnInit, ViewChild } from '@angular/core';
 import { Product } from 'src/app/models/models';
 import { CartService } from 'src/app/services/cart.service';
 import { ProductsService } from 'src/app/services/product.service';
+import { SettingsService } from 'src/app/services/settings.service';
 import { UsersService } from 'src/app/services/users.service';
 
 @Component({
@@ -18,7 +19,8 @@ export class ProductItemCardComponent implements OnInit {
   constructor(
     public cartService: CartService,
     public userService: UsersService,
-    public productsService: ProductsService
+    public productsService: ProductsService,
+    public settingsService: SettingsService
   ) { }
 
   ngOnInit(): void {
