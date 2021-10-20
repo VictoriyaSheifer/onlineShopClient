@@ -6,7 +6,7 @@ import { Injectable } from '@angular/core';
 export class SettingsService {
   version: string = "1.0.1";
   baseUrl: string = "https://demoonlineshop.herokuapp.com";
-  ImageUrl: string = "{{this.settingsService.ImageUrl}}";
+  ImageUrl: string = "https://res.cloudinary.com/drzzptile/image/upload/";
   userId: number = 0
   currentPage: number = 0;
   public slides = [
