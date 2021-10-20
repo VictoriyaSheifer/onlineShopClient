@@ -5,7 +5,7 @@ import { Injectable } from '@angular/core';
 })
 export class SettingsService {
   version: string = "1.0.1";
-  baseUrl: string = "https://demoonlineshop.herokuapp.com/";
+  baseUrl: string = "https://demoonlineshop.herokuapp.com";
   userId: number = 0
   currentPage: number = 0;
   public slides = [
